@@ -1651,7 +1651,7 @@ int32_t lps27hhtw_int_on_threshold_get(const stmdev_ctx_t *ctx,
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
-int32_t lps27hhtw_int_treshold_set(const stmdev_ctx_t *ctx, uint16_t buff)
+int32_t lps27hhtw_int_threshold_set(const stmdev_ctx_t *ctx, uint16_t buff)
 {
   int32_t ret;
 
@@ -1679,7 +1679,7 @@ int32_t lps27hhtw_int_treshold_set(const stmdev_ctx_t *ctx, uint16_t buff)
   * @retval          interface status (MANDATORY: return 0 -> no Error)
   *
   */
-int32_t lps27hhtw_int_treshold_get(const stmdev_ctx_t *ctx, uint16_t *buff)
+int32_t lps27hhtw_int_threshold_get(const stmdev_ctx_t *ctx, uint16_t *buff)
 {
   int32_t ret;
 
