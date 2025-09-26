@@ -420,9 +420,6 @@ int32_t lps27hhtw_data_rate_get(const stmdev_ctx_t *ctx,
 
   if (ret == 0)
   {
-    ret = lps27hhtw_read_reg(ctx, LPS27HHTW_CTRL_REG2,
-                             (uint8_t *)&ctrl_reg2, 1);
-
     switch (((ctrl_reg2.low_noise_en << 4) + (ctrl_reg2.one_shot << 3) +
              ctrl_reg1.odr))
     {
